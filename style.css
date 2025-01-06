@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #2a2d31;
+    padding: 10px 20px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+}
+.header .nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+}
+.header .nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .nav ul li{
+    list-style: none;
+    margin: 0 10px;
+    font-size: 14px;
+    padding:  5px 6px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-align: center;
+}
+.header .nav ul li .sign-in{
+    margin-left: 30px;
+}
+.header .nav ul a{
+    text-decoration: none;
+}
+.header .nav ul a li:hover{
+    color: rgb(240, 151, 119);
+    transition: 0.3s ease;
+    
+   
+}
+
+.header .nav ul .sign-in:hover {
+    background-color:white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo h2{
+    font-family: "Italiana", serif;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    margin-left: 40px;
+    color: #fff;
+    
+}
+.header .logo img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+/* hero */
+#hero{
+    max-width: 100%;
+    height: 100vh;
+    background:url(images/hero.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+  align-items: center;
+
+
+}
+#hero .hero-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+   
+    margin-left: 80px;
+}
+#hero .hero-sec h1{
+    font-family: "Italiana", serif;
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 4px #4a5752;
+   margin-bottom: 10px;
+    
+   
+}
+#hero .hero-sec p{
+    font-family: "Italiana", serif;
+    color: #1b0334;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fafdfc;
+    margin-bottom: 25px;
+}
+#hero .hero-sec button{
+   
+    font-size: 13px;
+    font-weight: 600;
+    padding: 15px;
+    cursor: pointer;
+   border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: #635687;
+    margin-left: 200px;
+    
+}
+#hero .hero-sec button:hover{
+    color: #8b79bd;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px white;
+}
+/* categories */
+
+
+#categories h2{
+    font-family: "italiana";
+    letter-spacing: 2px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px #0f392b;
+    margin: 25px;
+}
+#categories .category-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid rgb(185, 213, 211);
+    margin: 40px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 58px rgb(219, 205, 205),1px 1px 58px rgb(255, 244, 244);
+  
+}
+#categories .category-sec div{
+    width: 350px;
+    height:210px;
+    border-radius: 8px;
+}
+#categories .category-sec div:hover{
+    box-shadow: 2px 2px 8px rgba(0,0, 0, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+#categories .category-sec .category-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(images/clothes/fashion.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    
+}
+#categories .category-sec .category-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(images/beauty/beauty-products.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    padding: 20px;
+    
+}
+#categories .category-sec .category-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(images/accessories/accessory.jpg);
+    backdrop-filter:  2px blur(100%);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    
+}
+#categories .category-sec .category-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(images/bags/bag.jpg);
+    backdrop-filter:  2px blur(100%);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    
+}
+#categories .category-sec .category-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(images/footware/footware.jpg);
+    backdrop-filter:  2px blur(100%);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    
+}
+#categories .category-sec .category-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(images/caps/cap.avif);
+    /* backdrop-filter:  2px blur(100%); */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    
+}
+#categories .category-sec h4{
+  font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight:900;
+    color: #fbfbfb;
+}
+#categories .category-sec p{
+    font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+      font-weight:600;
+      color: #f8f8f8;
+      margin-top: 15px;
+  }
+  #categories .category-sec .cat-btn{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top:15px; 
+    color: rgb(6, 75, 92);
+    font-weight: 600;
+    background-color: #f0feff;
+
+  }
+
+  #categories .category-sec .cat-btn:hover{
+    background-color:rgb(6, 75, 92);
+    color: #fff;
+    
+  }
+
+  /* featured products */
+
+  #featured-products .featured-products-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid rgb(185, 213, 211);
+    margin: 40px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 58px rgb(219, 205, 205),1px 1px 58px rgb(255, 244, 244);
+  
+
+  }
+  #featured-products  h2{
+    font-family: "italiana";
+    letter-spacing: 2px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px #0f392b;
+    margin: 25px;
+  }
+
+
+ 
+
+ .product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 330px;
+    width: 250px;
+    border: 2px solid rgb(233, 238, 239);
+    margin: 10px;
+    padding:  5px 15px;
+    border-radius: 10px;
+    
+  
+  }
+  .product-card:hover{
+    box-shadow: 2px 2px 8px rgba(0,0, 0, 0.6);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .product-card img{
+    height: 180px;
+    width: 220px;
+    border-radius: 10px;
+
+  }
+  .product-card h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 10px 0;
+    color: #7c7070;
+  }
+  .product-card p{
+    margin: 2px 0;
+    color: #417a64;
+    font-weight: 600;
+  }
+  .product-card button{
+    margin:10px 50px;
+    width: 100px;
+    padding: 8px 5px;
+    border: none;
+    background-color: #ff8914;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #f5ecec;
+  }
+  .product-card button:hover{
+    background-color: #705d5d;
+    color: #f3c699;
+  }
+
+  /* new arrivals */
+  
+  #newarrivals .newarrivals-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid rgb(185, 213, 211);
+    margin: 40px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 58px rgb(219, 205, 205),1px 1px 58px rgb(255, 244, 244);
+  
+
+  }
+  #newarrivals h2{
+    font-family: "italiana";
+    letter-spacing: 2px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px #0f392b;
+    margin: 25px;
+  }
+
+  /* testimonials */
+  #testimonials h2{
+    font-family: "italiana";
+    letter-spacing: 2px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px #0f392b;
+    margin: 25px;
+  }
+
+  .testimonial-sec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 20px 40px;
+    background-color: #fffcfc;
+    padding: 25px;
+    
+  }
+  .testimonial-sec div{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 80px;
+    text-align: center;
+    margin: 12px;
+    padding: 10px;
+    transform: skew(-20deg);
+    border-radius: 15px 0 15px 0 ;
+  }
+  .testimonial-sec div:nth-child(1)
+  {
+    background-color: #ffc9c9;
+}
+.testimonial-sec div:nth-child(2)
+  {
+    background-color: #d7ffc8;
+}.testimonial-sec div:nth-child(3)
+{
+  background-color: #ffffad;
+}.testimonial-sec div:nth-child(4)
+{
+  background-color: #ffd489;
+}.testimonial-sec div:nth-child(5)
+{
+  background-color: #85e5f4;
+}.testimonial-sec div:nth-child(6)
+{
+  background-color: #b997c8;
+}
+  .testimonial-sec p{
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* news letter */
+  #newsletter .newsletter-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:url(images/news-bg.avif);
+    background-position: center;
+    background-size:cover;
+    height: 280px;
+  }
+  .newsletter-sec h2{
+    font-family: "italiana";
+    letter-spacing: 2px;
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #a7a0a0;
+    margin: 20px 0px 30px 0;
+  }
+  .newsletter-sec input{
+    font-size: 20px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px 0 0px 5px;
+  }
+  .newsletter-sec button{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px ;
+    margin-top: 20px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #ef3a3a;
+    color: #fdfdfd;
+  }
+  .newsletter-sec button:hover{
+    border: 1px solid white;
+    background-color: #373333;
+    color: rgb(253, 251, 251);
+  }
+
+  /* footer */
+  #footer .footer-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #676565;
+  }
+  .footer-sec .fnav-list{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+  } 
+  .footer-sec .fnav-list ul{
+    display: flex;
+  
+    justify-content: space-around;
+  }
+  .footer-sec .fnav-list ul li{
+    margin-right: 90px;
+    margin-bottom: 20px;
+    list-style: none;
+  }
+  .footer-sec .fnav-list ul li a{
+    text-decoration: none;
+    color: rgb(235, 233, 233);
+  }
+  .footer-sec .fnav-list img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+  }
+  .footer-sec .fd{
+    background-color: #313030;
+    width: 100%;
+    padding: 10px;  
+    text-align: center;
+
+}
+.footer-sec .fd p{
+    color: white;
+}
